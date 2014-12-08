@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ToDoApp_Insert.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ToDoApp_Final_dialog.jnlp">
   <information>
-    <title>ToDoApp_Insert</title>
+    <title>ToDoApp_Final_dialog</title>
     <vendor>Phil</vendor>
     <description>null</description>
     <offline-allowed/>
@@ -11,12 +11,12 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ToDoApp_Insert.jar" size="9371" download="eager" />
+    <jar href="ToDoApp_Final_dialog.jar" size="18525" download="eager" />
     <jar href="lib/sqlite-jdbc-3.8.5-pre1.jar" size="3912449" download="eager" />
   </resources>
-  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ToDoApp_Insert" >
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ToDoApp_Final_dialog" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="todoapp.ToDoApp"  name="ToDoApp_Insert" />
+  <jfx:javafx-desc  width="800" height="600" main-class="todoapp.ToDoApp"  name="ToDoApp_Final_dialog" />
   <update check="always"/>
 </jnlp>
