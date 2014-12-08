@@ -35,6 +35,8 @@ public class FXMLHomePageController implements Initializable {
     @FXML
     private Button view_button;
     
+    @FXML
+    private Label task_label;
     
     
     
@@ -55,20 +57,7 @@ public class FXMLHomePageController implements Initializable {
         app_stage.hide(); //optional
         app_stage.setScene(insert_page_scene);
         app_stage.show();  
-        
-        
             
     }
     
-    @FXML
-    private void viewButtonAction(ActionEvent event) throws IOException {
-        System.out.println("viewbuttonaction");
-        Parent view_page_parent = FXMLLoader.load(getClass().getResource("FXMLViewPage.fxml"));
-        Scene view_page_scene = new Scene(view_page_parent);
-        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        app_stage.hide(); //optional
-        app_stage.setScene(view_page_scene);
-        app_stage.show();  
-            
-    }
 }

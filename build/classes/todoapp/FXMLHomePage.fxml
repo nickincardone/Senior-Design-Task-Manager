@@ -15,7 +15,7 @@
          </font>
       </Label>
       <Button fx:id="insert_button" layoutX="173.0" layoutY="175.0" mnemonicParsing="false" onAction="#insertButtonAction" prefHeight="25.0" prefWidth="235.0" text="Insert Tasks" />
-      <Button fx:id="view_button" layoutX="173.0" layoutY="219.0" mnemonicParsing="false" onAction="#viewButtonAction" prefHeight="25.0" prefWidth="235.0" text="View Tasks" />
+      <Button fx:id="view_button" layoutX="173.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="View Tasks" />
       <Label fx:id="task_label" layoutX="279.0" layoutY="329.0" />
    </children>
 </AnchorPane>
