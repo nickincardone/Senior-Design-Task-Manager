@@ -7,9 +7,6 @@ package todoapp;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,8 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -27,48 +23,34 @@ import javafx.stage.Stage;
  *
  * @author Phil
  */
-public class FXMLHomePageController implements Initializable {
+public class FXMLNotesController implements Initializable {
 
-    @FXML
-    private Button insert_button;
-    
-    @FXML
-    private Button view_button;
-    
-    
-    
-    
     /**
      * Initializes the controller class.
      */
+    @FXML
+    TextArea notes_textarea;
+   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }   
     
-    @FXML
-    private void insertButtonAction(ActionEvent event) throws IOException {
-        System.out.println("insertbuttonaction");
-        Parent insert_page_parent = FXMLLoader.load(getClass().getResource("FXMLInsertPage.fxml"));
-        Scene insert_page_scene = new Scene(insert_page_parent);
-        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        app_stage.hide(); //optional
-        app_stage.setScene(insert_page_scene);
-        app_stage.show();  
-        
-        
-            
+    public void setNotes(String notes){
+        notes_textarea.setText(notes);
     }
     
     @FXML
-    private void viewButtonAction(ActionEvent event) throws IOException {
-        System.out.println("viewbuttonaction");
+    private void backButtonAction(ActionEvent event) throws IOException {
         Parent view_page_parent = FXMLLoader.load(getClass().getResource("FXMLViewPage.fxml"));
         Scene view_page_scene = new Scene(view_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app_stage.hide(); //optional
         app_stage.setScene(view_page_scene);
-        app_stage.show();  
-            
+        app_stage.show();
     }
+    
+   
+   
+    
 }

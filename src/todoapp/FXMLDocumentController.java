@@ -50,8 +50,6 @@ public class FXMLDocumentController implements Initializable {
            if (isValidCredentials())
             {
                 app_stage.hide(); //optional
-                String css = ToDoApp.class.getResource("LoginStyle.css").toExternalForm();
-                home_page_scene.getStylesheets().add(css);
                 app_stage.setScene(home_page_scene);
                 app_stage.show();  
             }

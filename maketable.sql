@@ -1,3 +1,5 @@
-CREATE TABLE Users (USERNAME TEXT PRIMARY KEY     NOT NULL, 
-                    PASSWORD       TEXT     NOT NULL );
+CREATE TABLE Tasks (TITLE 		   TEXT     NOT NULL, 
+                    LOCATION       TEXT     NOT NULL,
+					NOTES		   TEXT		NOT NULL,
+					TIMING		   DATETIME PRIMARY KEY NOT NULL);
 					

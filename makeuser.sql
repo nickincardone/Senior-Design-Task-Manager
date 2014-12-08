@@ -1,1 +1,1 @@
-INSERT INTO Users (USERNAME,PASSWORD) VALUES ('username2','password2' );
+INSERT INTO Tasks (TITLE,LOCATION,NOTES,TIMING) VALUES ('Do that laundry','Hanson Hall','I hate myself','2014-10-23 07:40:00');
