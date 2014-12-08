@@ -22,10 +22,9 @@ public class ToDoApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
-        //String css = "LoginStyle.css";
-        //scene.getStylesheets().add(css);
+        String css = ToDoApp.class.getResource("LoginStyle.css").toExternalForm();
+        scene.getStylesheets().add(css);
         stage.setScene(scene);
-        
         stage.show();
     }
 
